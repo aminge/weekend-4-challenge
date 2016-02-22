@@ -20,6 +20,15 @@ body {
     text-align: center;
 }
 
-body table .complete {
+body table .complete .task_name {
     background-color: lightskyblue;
+}
+
+body table .complete .complete_task {
+    background-color: lightskyblue;
+}
+
+td {
+    border-style: solid;
+    border-width: 2px;
 }

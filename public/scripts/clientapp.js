@@ -37,6 +37,7 @@ function appendTaskToTable(task){
 
     if (task.task_status == 'complete'){
         $('#task-' + task.task_id).addClass('complete');
+        $('#task-' + task.task_id).find('.complete_task').text('Complete!');
     }
 }
 
@@ -53,6 +54,7 @@ function clickCompleteTask(){
         }
     });
     $(this).parent().addClass('complete');
+    $(this).text('Complete!');
 }
 
 function clickDeleteTask(){
