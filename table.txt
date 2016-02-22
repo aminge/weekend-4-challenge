@@ -1,0 +1,5 @@
+CREATE TABLE to_do_list (
+task_id serial NOT NULL,
+task_name varchar(255) NOT NULL,
+task_status varchar(50) NOT NULL
+);

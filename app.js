@@ -56,7 +56,7 @@ app.post('/submit-task', function(req, res){
 app.get('/tasks', function(req, res){
     var results = [];
     pg.connect(connectionString, function(err, client, done) {
-        var query = client.query("SELECT * FROM to_do_list ORDER BY task_status DESC;");
+        var query = client.query("SELECT * FROM to_do_list ORDER BY task_status ASC;");
 
         query.on('row', function(row) {
             results.push(row);
