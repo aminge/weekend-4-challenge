@@ -1,0 +1,25 @@
+body {
+    font-family: "PT Serif", Serif;
+    font-size: 20px;
+}
+
+.task_name {
+    width: 400px;
+    padding-left: 10px;
+}
+
+.complete_task {
+    width: 200px;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.delete_task {
+    width: 170px;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+body table .complete {
+    background-color: lightskyblue;
+}
